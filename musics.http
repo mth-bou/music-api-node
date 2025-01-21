@@ -1,0 +1,29 @@
+### CREATE NEW MUSIC
+POST http://localhost:3000/musics
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "artist": "Test",
+  "album": "Test",
+  "year": 2021,
+  "genre": "Test",
+  "duration": 180,
+  "url": "https://www.youtube.com/watch?v=6n3pFFPSlW4"
+}
+
+### GET ALL MUSICS
+GET http://localhost:3000/musics
+Content-Type: application/json
+
+### GET ONE MUSIC
+GET http://localhost:3000/musics/ae5410ba-7e7f-4a6e-ae93-6d603da84287
+Content-Type: application/json
+
+### UPDATE ONE MUSIC
+PUT http://localhost:3000/musics/ae5410ba-7e7f-4a6e-ae93-6d603da84287
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=sOnqjkJTMaA"
+}

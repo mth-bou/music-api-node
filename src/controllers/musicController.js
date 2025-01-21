@@ -6,7 +6,7 @@ const getAllMusics = (req, res) => {
 }
 
 const getMusic = (req, res, id) => {
-  const music = musicModel.getMusicById(req.params.id);
+  const music = musicModel.getMusicById(id);
   if (music) {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify(music));
